@@ -23,7 +23,6 @@
 
 .scroll-progress__label {
   position: absolute;
-  bottom: -22px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 0.55rem;

@@ -24,7 +24,10 @@ export default function ScrollProgressBar() {
         style={{ height: `${progress}%` }}
       />
       {progress > 4 && (
-        <span className="scroll-progress__label">
+        <span
+          className="scroll-progress__label"
+          style={{ top: `calc(${progress}% + 5px)` }}
+        >
           {Math.round(progress)}%
         </span>
       )}

@@ -5,7 +5,6 @@ import './About.css';
 
 const languages = [
   { lang: 'English', level: 'Fluent', pct: 100 },
-  { lang: 'Chinese', level: 'Fluent', pct: 100 },
   { lang: 'Malay', level: 'Fluent', pct: 100 },
   { lang: 'Tamil', level: 'Intermediate', pct: 55 },
 ];
