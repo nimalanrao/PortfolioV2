@@ -1,0 +1,33 @@
+.blur-text {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+}
+
+.blur-text__word {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(10px);
+  will-change: opacity, filter, transform;
+  transition-property: opacity, filter, transform;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.blur-text__word--top {
+  transform: translateY(-20px);
+}
+
+.blur-text__word--bottom {
+  transform: translateY(20px);
+}
+
+.blur-text__word--visible {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(0px);
+}

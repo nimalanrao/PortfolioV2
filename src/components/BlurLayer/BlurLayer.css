@@ -1,0 +1,17 @@
+/* ============================
+   BLUR LAYER — cards & buttons
+   Applied via BlurLayer.jsx import
+   ============================ */
+
+.dark-card {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.contact__btn,
+.skills__pill,
+.services__tag,
+.about__trait-pill {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
