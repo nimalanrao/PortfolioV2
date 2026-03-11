@@ -1,5 +1,4 @@
 ﻿import Beams from '../../components/Beams/Beams';
-import GradualBlur from '../../components/GradualBlur/GradualBlur';
 import './Hero.css';
 
 export default function Hero() {
@@ -67,22 +66,6 @@ export default function Hero() {
           ))}
         </div>
       </div>
-
-      <button className="hero__scroll" onClick={() => handleScroll('#about')}>
-        <div className="hero__scroll-line" />
-        <span>Scroll</span>
-      </button>
-
-      <GradualBlur
-        target="parent"
-        position="bottom"
-        height="10rem"
-        strength={3}
-        divCount={7}
-        curve="bezier"
-        exponential
-        opacity={1}
-      />
     </section>
   );
 }
