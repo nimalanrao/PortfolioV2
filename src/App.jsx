@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import ClickSpark from './components/ClickSpark/ClickSpark';
 import ScrollProgressBar from './components/ScrollProgressBar/ScrollProgressBar';
 import LoadingScreen from './components/LoadingScreen/LoadingScreen';
@@ -17,6 +17,12 @@ function App() {
   const [loadingDone, setLoadingDone] = useState(false);
   const handleLoadingComplete = useCallback(() => setLoadingDone(true), []);
   useScrollReveal();
+
+  // Always start at the top on page load/refresh
+  useEffect(() => {
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

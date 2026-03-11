@@ -24,11 +24,7 @@
   height: auto !important;
   overflow: visible !important;
   transition: border-radius 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
-}
-
-.island-glass .glass-surface__content {
-  flex-direction: column !important;
-  align-items: stretch !important;
+  background: rgba(6, 6, 12, 0.62) !important;
   padding: 0 !important;
 }
 

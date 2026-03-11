@@ -162,10 +162,11 @@
 /* Desc */
 .hero__desc {
   margin: 0;
-  font-size: clamp(0.82rem, 1.7vw, 0.95rem);
-  color: rgba(255, 255, 255, 0.38);
-  max-width: 500px;
-  line-height: 1.8;
+  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 560px;
+  line-height: 1.7;
+  font-weight: 500;
 }
 
 /* CTAs */

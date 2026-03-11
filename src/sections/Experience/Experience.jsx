@@ -52,7 +52,7 @@ export default function Experience() {
                     <h3 className="experience__role">Barista &amp; F&amp;B Service</h3>
                     <p className="experience__org">Food &amp; Beverage Industry · Kuala Lumpur</p>
                   </div>
-                  <div className="experience__date">Ongoing</div>
+                  <div className="experience__date">2025 – Feb 2026</div>
                 </div>
                 <ul className="experience__list">
                   {expPoints.map((p, i) => (

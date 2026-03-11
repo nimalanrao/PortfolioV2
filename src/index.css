@@ -85,12 +85,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
 }
 
-/* gradient on section heading spans (BlurText spans) */
+/* section heading spans (BlurText spans) */
 .section__heading span {
-  background: linear-gradient(135deg, #ffffff 40%, #c4b5fd 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
 }
 
 .section__subheading {
