@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 — Nithyanatha</title>
+    <link rel="preconnect" href="https://fonts.cdnfonts.com" />
+    <link href="https://fonts.cdnfonts.com/css/product-sans" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        background: #0a0a0a;
+        color: #fff;
+        font-family: 'Product Sans', system-ui, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .glow {
+        position: fixed;
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 70%);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        filter: blur(60px);
+      }
+
+      .label {
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.35);
+        margin-bottom: 1.5rem;
+      }
+
+      .number {
+        font-size: clamp(8rem, 28vw, 18rem);
+        font-weight: 800;
+        line-height: 1;
+        letter-spacing: -0.04em;
+        color: #fff;
+        opacity: 0.08;
+        user-select: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        pointer-events: none;
+      }
+
+      .content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      h1 {
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+
+      p {
+        font-size: 0.9rem;
+        color: rgba(255,255,255,0.4);
+        max-width: 320px;
+        line-height: 1.7;
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #fff;
+        color: #0a0a0a;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.875rem;
+        padding: 0.75rem 1.75rem;
+        border-radius: 100px;
+        transition: opacity 0.2s, transform 0.2s;
+        box-shadow: 0 0 28px rgba(255,255,255,0.2);
+        margin-top: 0.5rem;
+      }
+
+      a:hover {
+        opacity: 0.88;
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="glow"></div>
+    <div class="number">404</div>
+    <div class="content">
+      <div class="label">Error 404</div>
+      <h1>Page Not Found</h1>
+      <p>This page doesn't exist or has been moved.</p>
+      <a href="/PortfolioV2/">← Back to Portfolio</a>
+    </div>
+  </body>
+</html>
